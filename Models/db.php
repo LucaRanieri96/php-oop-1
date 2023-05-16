@@ -1,6 +1,6 @@
 <?php
-include __DIR__ . '/models/Movie.php';
-include __DIR__ . '/models/Genre.php';
+include_once __DIR__ . '/models/Movie.php';
+include_once __DIR__ . '/models/Genre.php';
 
 $genre_1 = new Genre('Fantascienza');
 $genre_2 = new Genre('Avventura');

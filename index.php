@@ -1,7 +1,7 @@
 <?php
 
-include __DIR__ . '/models/Movie.php';
-include __DIR__ . '/models/Genre.php';
+include_once __DIR__ . '/models/Movie.php';
+include_once __DIR__ . '/models/Genre.php';
 include __DIR__ . '/models/db.php';
 
 ?>
@@ -25,7 +25,7 @@ include __DIR__ . '/models/db.php';
   <div class="container">
     <div class="row row-cols-3 g-2">
       <?php foreach ($movies as $movie): ?>
-        <div class="col">
+      <div class="col">
           <div class="card bg-dark text-white">
             <img src="<?php echo $movie->getImgUrl(); ?>" class="card-img">
             <div class="card-img-overlay">
@@ -41,7 +41,7 @@ include __DIR__ . '/models/db.php';
             </div>
           </div>
         </div>
-      <?php endforeach; ?>
+        <?php endforeach; ?>
     </div>
   </div>
 
