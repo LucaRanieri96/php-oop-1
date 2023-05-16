@@ -1,9 +1,28 @@
-body{
-    background-color: #161616;
+body {
+  background-color: #161616;
 }
 
-h1{
-    color: white;
-    margin: 2rem 0;
+h1 {
+  color: white;
+  margin: 2rem 0;
+}
+
+h4, p{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 0.5rem;
+    display: none;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover h4,
+.card:hover p {
+  display: inline-block;
+}
+
+.card:hover img{
+    opacity: 0.3;
 }
 
