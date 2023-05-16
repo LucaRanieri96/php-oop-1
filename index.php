@@ -4,7 +4,6 @@ include __DIR__ . '/models/Movie.php';
 include __DIR__ . '/models/Genre.php';
 include __DIR__ . '/models/db.php';
 
-var_dump($movies);
 ?>
 
 <!DOCTYPE html>
@@ -23,6 +22,23 @@ var_dump($movies);
 <body>
   <h1 align='center'>Films</h1>
 
+  <?php foreach ($movies as $movie): ?>
+    <ul>
+      <li>
+        <h2>
+          <?php echo $movie->getTitle(); ?>
+        </h2>
+        <p>
+          Genere:
+          <?php echo $movie->getGenre()->name; ?>
+        </p>
+        <p>
+          Descrizione:
+          <?php echo $movie->getDescription(); ?>
+        </p>
+      </li>
+    </ul>
+  <?php endforeach; ?>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
