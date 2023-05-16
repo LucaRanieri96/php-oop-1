@@ -2,7 +2,7 @@
 
 include_once __DIR__ . '/models/Movie.php';
 include_once __DIR__ . '/models/Genre.php';
-include __DIR__ . '/models/db.php';
+include 'db.php';
 
 ?>
 
